@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'home/about'
+  get 'home/lookup'
+  post "/home/lookup" => 'home#lookup'
   # Setting up the home directory with the index page as the root page for the
   # web site
   root "home#index"
