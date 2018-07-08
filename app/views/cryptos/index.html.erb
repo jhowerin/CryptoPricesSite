@@ -35,7 +35,7 @@
             <td>$ <%= x['price_usd'].to_f * crypto.amount_owned  %></td>
             <td>$ <%= crypto.cost_per * crypto.amount_owned %></td>
             <td>$ <%=  (x['price_usd'].to_f * crypto.amount_owned) - (crypto.cost_per * crypto.amount_owned) %></td>
-            <%=  @profit_loss+= (x['price_usd'].to_f * crypto.amount_owned) - (crypto.cost_per * crypto.amount_owned) %>
+            <%  @profit_loss += (x['price_usd'].to_f * crypto.amount_owned) - (crypto.cost_per * crypto.amount_owned) %>
           <% end %>
         <% end %>
         
