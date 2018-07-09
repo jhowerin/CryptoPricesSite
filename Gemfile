@@ -13,7 +13,6 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'rails', '4.2.5'
   gem 'byebug'
   gem 'sqlite3'
 end
